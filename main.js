@@ -1,5 +1,5 @@
 function quchong(arr){
-    return arr.filter((value,index,arr)=>arr.indexOf(value)===index);
+    return Array.from(new Set(arr));
 }
 
 console.log(quchong(['s', 'a', 's', 'b', 'a',1,'1',1]));
